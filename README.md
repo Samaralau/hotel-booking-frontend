@@ -65,3 +65,5 @@ export default tseslint.config({
   },
 })
 ```
+
+Note that .env.example is set to example.com for security reasons
