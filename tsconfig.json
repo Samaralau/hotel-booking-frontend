@@ -1,0 +1,13 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "strict": true,
+    // https://github.com/testing-library/jest-dom?tab=readme-ov-file#with-vitest
+    "types": ["vitest/globals", "@testing-library/jest-dom"]
+  },
+  "include": ["vitest.config.ts", "tests/**/*.ts", "tests/**/*.tsx"]
+}
