@@ -1,11 +1,11 @@
-import StarUI from "./StarRating";
+import StarUI from './StarRating'
 
 type FilterStarprops = {
-  minstar: number;
-  maxstar: number;
-  setminstar: (val: number) => void;
-  setmaxstar: (val: number) => void;
-};
+  minstar: number
+  maxstar: number
+  setminstar: (val: number) => void
+  setmaxstar: (val: number) => void
+}
 
 export default function StarRatingFilter({
   minstar,
@@ -20,7 +20,7 @@ export default function StarRatingFilter({
         <StarUI
           name="min-rating"
           rating={minstar}
-          onChange={(val) => setminstar(val)}
+          onChange={val => setminstar(val)}
           readonly={false}
         />
       </div>
@@ -29,10 +29,10 @@ export default function StarRatingFilter({
         <StarUI
           name="max-rating"
           rating={maxstar}
-          onChange={(val) => setmaxstar(val)}
+          onChange={val => setmaxstar(val)}
           readonly={false}
         />
       </div>
     </div>
-  );
+  )
 }

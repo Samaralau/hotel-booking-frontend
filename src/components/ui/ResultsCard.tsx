@@ -1,13 +1,13 @@
-import type { Hotel } from "../../types/params";
-import { Link } from "wouter";
-import StarUI from "./StarRating";
+import type { Hotel } from '../../types/params'
+import { Link } from 'wouter'
+import StarUI from './StarRating'
 
 interface Results {
-  hotel: Hotel;
-  hotelprice?: number;
-  checkin?: string;
-  checkout?: string;
-  guests?: string;
+  hotel: Hotel
+  hotelprice?: number
+  checkin?: string
+  checkout?: string
+  guests?: string
 }
 
 export const HotelCard = ({ hotel, hotelprice }: Results) => {
@@ -32,7 +32,8 @@ export const HotelCard = ({ hotel, hotelprice }: Results) => {
         </div>
         <div>
           <p className="text-green-600 font-semibold text-xl flex justify-end">
-            ${hotelprice}
+            $
+            {hotelprice}
           </p>
         </div>
         <div className="flex justify-end">
@@ -45,5 +46,5 @@ export const HotelCard = ({ hotel, hotelprice }: Results) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
