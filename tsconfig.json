@@ -1,0 +1,30 @@
+{
+  // "files": [],
+  // "references": [
+  //   { "path": "./tsconfig.app.json" },
+  //   { "path": "./tsconfig.node.json" }
+  // ],
+  "compilerOptions": {
+    "composite": true,
+    "strict": true,
+    "jsx": "react-jsx",
+    // https://github.com/testing-library/jest-dom?tab=readme-ov-file#with-vitest
+    "types": ["vitest/globals", "@testing-library/jest-dom"],
+    "moduleResolution": "bundler",
+    "module": "ESNext",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "noEmit": true,
+    // due to node_modules/@stripe/react-stripe-js/dist/react-stripe.d.ts
+    "skipLibCheck": true
+  },
+  "include": [
+    "vitest.config.ts",
+    "vite.config.ts",
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
+    "src",
+    "__mocks__/**/*.ts"
+  ],
+  "exclude": ["node_modules", "dist"]
+}
